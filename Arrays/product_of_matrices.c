@@ -31,7 +31,8 @@ int main()
      for(int i = 0; i < 2; i++){
         for(int j = 0; j < 2; j++){
             for(int k = 0; k<2;k++){
-                
+                product[i][j]+=mat[i][k]*mat1[k][j];
+                printf("\t%d",product[i][j]);
             }
         }
         printf("\n");
