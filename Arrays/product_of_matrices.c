@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-     int mat[2][2],mat1[2][2],product[2][2];
+     int mat[2][2],mat1[2][2],product[2][2]={0};
      for(int i = 0; i < 2; i++){
         for(int j = 0; j < 2; j++){
             printf("Enter the %d %d element of the first matrix : ",i+1,j+1);
@@ -28,6 +28,7 @@ int main()
         }
         printf("\n");
      }
+     printf("\n");
      for(int i = 0; i < 2; i++){
         for(int j = 0; j < 2; j++){
             for(int k = 0; k<2;k++){
