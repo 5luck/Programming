@@ -13,8 +13,8 @@ int main()
             printf("\nEnter the %d %d element of the matrix: ",i,j);
             scanf("%d",&m2[i][j]);
         }
-     }
-     for(int i=0;i<2;i++){
+     } 
+     for(int i = 0 ; i < 2 ; i++){
         for(int j=0;j<2;j++){
             for(int k=0;k<2;k++){
            m3[i][j]+=m1[i][k]*m2[k][j];
