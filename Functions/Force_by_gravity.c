@@ -6,7 +6,7 @@ float force(float m){
 }
 int main()
 {
-    float mass=100.0;
-    printf("The force exerted by %.2f Kg is %.2f",mass,force(mass));
+    float mass=10.0;
+    printf("The force exerted by %.2f Kg is %.2fN",mass,force(mass));
     return 0;
 }
