@@ -3,11 +3,10 @@ int star(int n);
 
 int star(int n) {
     int total_stars = 0;  // To count total stars
-    for(int i = 1; i <= n; i++)
-    {
+    for(int i = 1; i <= n; i++){
        for(int j = 1; j <= (2*i-1); j++)
         {
-            printf("*");
+            printf("*"); 
             total_stars++;  // Count each star
         }
         printf("\n");
