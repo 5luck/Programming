@@ -3,11 +3,13 @@
 int main()
 {
     int hel[2];
-    printf("Enter hel[0]: ");
-    scanf("%d", &hel[0]);  // Use & to get the address of hel[0]
-
-    printf("Enter hel[1]: ");
-    scanf("%d", &hel[1]);  // Use & to get the address of hel[1]
+    for (int i = 0; i < 2; i++) {
+        printf("Enter hel[%d]: ", i);
+        if (scanf("%d", &hel[i]) != 1) {
+            printf("Invalid input. Please enter an integer.\n");
+            return 1;  // Exit the program if input is invalid
+        }
+    }
 
     printf("%d\t%d\n", hel[0], hel[1]);
 
