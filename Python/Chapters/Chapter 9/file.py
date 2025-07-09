@@ -1,4 +1,4 @@
-f = open("File.txt")
+f = open("File.txt","r")
 Text = f.read()
 print(Text)
 f.close()
