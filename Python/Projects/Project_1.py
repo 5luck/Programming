@@ -11,9 +11,9 @@ if lower_u_c not in lower_game:
 else:
    computer_choice = random.choice(game)
    print(f"My choice: {computer_choice}")
-if(lower_u_c == computer_choice.lower()):
-   print("Haha! It's a Draw")
-elif(lower_u_c == "snake" and computer_choice.lower() == "water" or lower_u_c == "water" and computer_choice.lower() == "gun" or lower_u_c == "gun" and computer_choice.lower() == "snake"):
-   print("Ahh! You won")
-elif(lower_u_c == "water" and computer_choice.lower() == "snake" or lower_u_c == "gun" and computer_choice.lower() == "water" or lower_u_c == "snake" and computer_choice.lower() == "gun"):
-   print("Yay! You lost")
+   if(lower_u_c == computer_choice.lower()):
+       print("Haha! It's a Draw")
+   elif(lower_u_c == "snake" and computer_choice.lower() == "water" or lower_u_c == "water" and computer_choice.lower() == "gun" or lower_u_c == "gun" and computer_choice.lower() == "snake"):
+       print("Ahh! You won")
+   elif(lower_u_c == "water" and computer_choice.lower() == "snake" or lower_u_c == "gun" and computer_choice.lower() == "water" or lower_u_c == "snake" and computer_choice.lower() == "gun"):
+       print("Yay! You lost")
